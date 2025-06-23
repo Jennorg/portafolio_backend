@@ -1,0 +1,55 @@
+# Ignorar directorios de módulos de Node
+node_modules/
+**/node_modules/ # Por si tienes node_modules anidados (ej. en subcarpetas de frontend/backend)
+
+# Ignorar archivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar builds de producción y archivos temporales
+build/
+dist/
+.parcel-cache/
+/frontend/dist/ # Específico para el build del frontend si está en una subcarpeta
+/backend/build/ # Específico para el build del backend si está en una subcarpeta
+
+
+/portafolio.db
+
+# Ignorar archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de editores de texto
+.vscode/ # Configuración de VS Code (opcional, si quieres compartirla)
+.idea/ # Directorio de configuración de IntelliJ IDEA
+
+# Ignorar archivos de caché de npm/yarn
+.npm/
+.yarn/
+
+# Ignorar otros archivos temporales o de configuración específicos
+coverage/
+*.tgz
+.DS_Store
+.env.*local
+
+# Archivos específicos de Node.js
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Archivos de depuración de V8
+.core
+npm-debug.log*
+yarn-debug.log*
